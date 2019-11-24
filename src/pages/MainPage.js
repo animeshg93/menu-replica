@@ -9,13 +9,29 @@ export default function MainPage() {
         <h2>Welcome to Chipotle Replica!!</h2>
       </div>
       <div className="row">
-        <MenuBox name="container" column="col-sm-3" />
-        <MenuBox name="delivery" column="col-sm-3" />
-        <MenuBox name="beans" column="col-sm-3" />
-        <MenuBox name="rice" column="col-sm-3" />
-        <MenuBox name="meat" column="col-sm-3" />
-        <MenuBox name="salsa" column="col-sm-3" />
-        <MenuBox name="misc" column="col-sm-10" />
+        <MenuBox
+          name="container"
+          column="col-sm-3"
+          items={["bowl", "burrito"]}
+        />
+        <MenuBox name="delivery" column="col-sm-3" items={["here", "to-go"]} />
+        <MenuBox name="beans" column="col-sm-3" items={["pinto", "black"]} />
+        <MenuBox name="rice" column="col-sm-3" items={["brown", "white"]} />
+        <MenuBox
+          name="meat"
+          column="col-sm-3"
+          items={["chicken", "sofritas", "beef"]}
+        />
+        <MenuBox
+          name="salsa"
+          column="col-sm-3"
+          items={["mild", "medium", "hot"]}
+        />
+        <MenuBox
+          name="misc"
+          column="col-sm-10"
+          items={["corn", "sour-cream", "cheese", "guac", "lettuce"]}
+        />
       </div>
     </div>
   );
